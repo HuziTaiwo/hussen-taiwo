@@ -54,8 +54,8 @@ aside.sidebar {
   margin-bottom: 10px;
 }
 
-.tabs a.inactive {
-  opacity: 0.3;
+.tabs a {
+  opacity: 0.5;
 }
 
 .tabs a.active {
@@ -66,15 +66,9 @@ aside.sidebar {
   background: #09083f;
 }
 
-.tab-content > section {
+/* .tab-content > section {
   margin-bottom: 70px;
-}
-
-#profile,
-#touch,
-#information {
-  height: 100vh;
-}
+} */
 
 #profile {
   width: 100%;
@@ -273,6 +267,22 @@ textarea {
   align-items: center;
 }
 
+#profile,
+#touch,
+#information {
+  height: 100vh;
+  display: none;
+}
+
+#profile.active {
+  display: block;
+}
+
+#information.active,
+#touch.active {
+  display: flex;
+}
+
 @media (max-width: 966px) {
   aside.sidebar {
     display: flex;
@@ -334,7 +344,7 @@ textarea {
   #profile,
   #touch,
   #information {
-    height: 400px;
+    height: 600px;
   }
 
   .con {
