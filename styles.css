@@ -135,6 +135,12 @@ aside.sidebar {
   padding-bottom: 30px;
 }
 
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 966px) {
   aside.sidebar {
     display: flex;
@@ -207,4 +213,13 @@ aside.sidebar {
     text-align: left;
     max-width: none;
   } */
+}
+
+@media (max-width: 575px) {
+  #sponsors h2 {
+    text-align: center;
+  }
+  .sponsors {
+    flex-direction: column;
+  }
 }
