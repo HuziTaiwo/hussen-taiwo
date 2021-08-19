@@ -12,8 +12,8 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
 }
 
 h1 {
@@ -33,6 +33,7 @@ p.stack {
 aside.sidebar {
   display: flex;
   height: 100vh;
+  position: fixed;
 }
 
 .tabs {
@@ -73,7 +74,7 @@ aside.sidebar {
 
 .con {
   text-align: center;
-  transform: translateY(500px);
+  transform: translateY(400px);
 }
 
 .con a {
@@ -86,6 +87,8 @@ aside.sidebar {
 
 #content {
   padding: 20px;
+  padding-left: 330px;
+  width: 100%;
 }
 
 #about,
@@ -151,13 +154,32 @@ aside.sidebar {
 
   #profile {
     height: 100vh;
+    padding: 0 20px;
+  }
+
+  #services ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    list-style: none;
+  }
+
+  #services li:last-of-type {
+    grid-column: 1;
+    text-align: left;
+    max-width: none;
   }
 }
 
 @media (max-width: 869px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
+  aside.sidebar {
+    display: flex;
+    height: auto;
+    position: static;
+  }
+
+  #content {
+    padding: 20px;
   }
 
   #profile {
@@ -173,7 +195,7 @@ aside.sidebar {
     font-size: 1.5rem;
   }
 
-  #services ul {
+  /* #services ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -184,5 +206,5 @@ aside.sidebar {
     grid-column: 1;
     text-align: left;
     max-width: none;
-  }
+  } */
 }
