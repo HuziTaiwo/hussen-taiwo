@@ -172,4 +172,17 @@ aside.sidebar {
   .con a {
     font-size: 1.5rem;
   }
+
+  #services ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    list-style: none;
+  }
+
+  #services li:last-of-type {
+    grid-column: 1;
+    text-align: left;
+    max-width: none;
+  }
 }
