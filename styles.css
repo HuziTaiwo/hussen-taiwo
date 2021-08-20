@@ -11,10 +11,10 @@ body {
   color: #eee;
 }
 
-main {
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
-}
+/* main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+} */
 
 h1 {
   font-size: 2rem;
@@ -34,6 +34,7 @@ aside.sidebar {
   display: flex;
   height: 100vh;
   position: fixed;
+  width: 400px;
 }
 
 .tabs {
@@ -57,6 +58,14 @@ aside.sidebar {
   margin-bottom: 10px;
 }
 
+.tabs a.inactive {
+  opacity: 0.3;
+}
+
+.tabs a.active {
+  opacity: 1;
+}
+
 .tabs a:hover {
   background: #09083f;
 }
@@ -70,6 +79,59 @@ aside.sidebar {
     url(./img/slider_10.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  display: none;
+}
+
+#touch {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+#touch h2,
+#touch h3 {
+  color: teal;
+  text-align: center;
+}
+
+form input[type="submit"] {
+  padding: 8px 15px;
+  background: teal;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px rgb(7, 77, 77);
+  color: #eee;
+}
+
+.fields > div {
+  padding: 10px 0;
+}
+
+.field_01 input,
+.field_02 input {
+  border: none;
+  border-bottom: 1px solid teal;
+  background: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 10px 0;
+  color: teal;
+}
+
+.field_03 label {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 1px solid teal;
+  padding: 10px;
+  outline: none;
 }
 
 .con {
@@ -87,7 +149,7 @@ aside.sidebar {
 
 #content {
   padding: 20px;
-  padding-left: 330px;
+  padding-left: 430px;
   width: 100%;
 }
 
@@ -163,6 +225,10 @@ aside.sidebar {
     padding: 0 20px;
   }
 
+  #touch {
+    padding: 15px;
+  }
+
   #services ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -182,6 +248,7 @@ aside.sidebar {
     display: flex;
     height: auto;
     position: static;
+    width: 100%;
   }
 
   #content {

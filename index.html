@@ -18,7 +18,7 @@
             <aside class="tabs">
                 <ul>
                     <li>
-                        <a href="#profile">
+                        <a href="#profile" class="inactive">
                            <i class="far fa-user"></i> 
                         </a>
                     </li>
@@ -57,6 +57,28 @@
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
+            </section>
+
+            <section id="touch">
+                <h2>Get in touch</h2>
+                <h3>Let's turn your idea into reality. Shoot me a message</h3>
+                <form id="message-me" netlify>
+                    <div class="fields">
+                        <div class="field_01">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="field_02">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                            <div class="field_03">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit" />
+                </form>
             </section>
         </aside>
         <section id="content">
