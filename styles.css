@@ -83,6 +83,13 @@ aside.sidebar {
 }
 
 #touch {
+  background: linear-gradient(
+      hsla(241, 77%, 14%, 0.8),
+      hsla(241, 77%, 14%, 0.6)
+    ),
+    url(./img/touch.png) no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -132,6 +139,7 @@ textarea {
   border: 1px solid teal;
   padding: 10px;
   outline: none;
+  color: teal;
 }
 
 .con {
