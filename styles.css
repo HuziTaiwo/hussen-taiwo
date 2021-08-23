@@ -76,7 +76,7 @@ aside.sidebar {
   padding: 10px 0;
 }
 
-.icon #profile {
+#profile {
   width: 100%;
   background: linear-gradient(
       hsla(241, 77%, 14%, 0.6),
