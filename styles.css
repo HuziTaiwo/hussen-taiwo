@@ -63,7 +63,20 @@ aside.sidebar {
   opacity: 1;
 }
 
-#profile {
+.tech {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #04041f;
+  padding-bottom: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.icon #profile {
   width: 100%;
   background: linear-gradient(
       hsla(241, 77%, 14%, 0.6),
