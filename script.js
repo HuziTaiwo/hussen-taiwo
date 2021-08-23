@@ -15,7 +15,8 @@ class Tabs {
         // remove current active classes
         this.tabs.forEach(tab => tab.classList.remove('active'));
         // add new active class to clicked tab
-        e.target.classList.add('active');
+        e.target.parentElement.classList.add('active');
+        // console.log(e.target)
     }
     toggleContent(e) {
         // remove current active classes from content
@@ -32,8 +33,3 @@ class Tabs {
 // create tabs
 const tabs = new Tabs(document.querySelector('aside.sidebar'))
 tabs.init();
-
-// const triggers = document.querySelectorAll('.trigger');
-// triggers.forEach(trigger => {
-//     console.log(trigger.firstElementChild);
-// })

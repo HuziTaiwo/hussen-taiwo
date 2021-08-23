@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   background: #09083f;
   color: #eee;
 }
@@ -20,6 +20,10 @@ h2 {
   text-transform: uppercase;
   padding-bottom: 15px;
   padding-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 p.stack {
@@ -52,23 +56,12 @@ aside.sidebar {
   display: block;
   font-size: 1.3rem;
   margin-bottom: 10px;
-}
-
-.tabs a {
   opacity: 0.5;
 }
 
 .tabs a.active {
   opacity: 1;
 }
-
-.tabs a:hover {
-  background: #09083f;
-}
-
-/* .tab-content > section {
-  margin-bottom: 70px;
-} */
 
 #profile {
   width: 100%;
@@ -215,6 +208,8 @@ textarea {
   padding: 20px;
   padding-left: 430px;
   width: 100%;
+  background: #fff;
+  color: #000;
 }
 
 #about,
